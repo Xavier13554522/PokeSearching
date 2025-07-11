@@ -1,3 +1,6 @@
+/*Si logras entender lo que hice sin desordenarte eres increible
+porque ni yo se lo que hice
+*/
 *{
 margin: 0;
 padding: 0;
@@ -33,18 +36,19 @@ font-weight: 400;
     background-color: #fff;
     padding: 80px;
     border: 1px solid #fff1;
-        box-shadow:5px 5px 20px black;
+    box-shadow:5px 5px 20px black;
     border-radius: 20px;
     gap: 40px;
-    width: fit-content;
 }
 .container_card{
     grid-template-columns: repeat(3,1fr);
     gap: 30px 20px;
 }
 .container_input{
-    padding: 20px;
     gap: 10px;
+}
+.error_style{
+margin:auto
 }
 input{
 padding: 15px;
@@ -98,11 +102,6 @@ gap: 10px;
 }
 .grass_style{
     background: #98dda5;
-    border-radius: 10px;
-    padding: 10px;
-}
-.fire_style{
-    background: #a24d3d;
     border-radius: 10px;
     padding: 10px;
 }
@@ -187,18 +186,28 @@ gap: 10px;
     border-radius: 10px;
     padding: 10px;
 }
-
 @media (max-width: 768px) {
-    .container_card{
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px 10px;
+    header{
+    scale: 0.6;
     }
-    .container{
-    padding: 60px;
+    .container_card{
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px 5px;
+    }
+.container{
+    margin:auto;
+    width: 60%;
+}
+.container_input{
+    scale: 0.8;
+    width:fit-content;
+    margin: auto;
 }
 .card{
-    height: 100%;
-    padding: 15px 10px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
 }
 input{
     width: 250px;
@@ -207,7 +216,7 @@ input{
     width: 60px;
 }
 p,h2{
-font-size: 18px;
+font-size: 15px;
 }
 .type_flex{
 gap: 5px;
@@ -215,6 +224,6 @@ gap: 5px;
 }
 @media (max-width: 877px){
  .container{
-    padding: 80px 20px;
+    padding: 20px;
  }
 }
